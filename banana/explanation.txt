@@ -2,5 +2,5 @@ I have used two 4 bit BCD adders in the file BCDA.sv to create an 8 bit bcd adde
 CLA.sv. We first add the first four bits in a 4 bit bcd adder and we check if the value is over 9 by checking the third and second bits or if a carry is generated. 
 with this generated carry we can give it as input to the next adder to convert it back to bcd if it is confirmed over 9 and this carry is fed to the next bcd adder 
 which adds the next four bits in the same manner. to check if the number is not bcd, we put an or gate checking for a carry out from the first adder, checking the 
-second and third bits and checking the first and third bits. if it is not bcd , the carry genenrated is used to add 6 to the number to convert it back to bcd and that
+second and third bits and checking the first and third bits. if it is not bcd , the carry generated is used to add 6 to the number to convert it back to bcd and that
 carry out signifies that there is an overflow.
